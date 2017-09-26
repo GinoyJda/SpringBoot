@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  contextPath: /test
+spring:
+  thymeleaf:
+     cache: false
+     prefix: classpath:/html/
+     suffix: .html
+     encoding: UTF-8
+     content-type: text/html
+     mode: HTML5
+  datasource:
+     url: jdbc:mysql://10.2.4.8:3306/mysql?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
+     username: root
+     password: mysql
+     driver-class-name: com.mysql.jdbc.Driver
