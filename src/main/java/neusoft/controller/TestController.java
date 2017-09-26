@@ -1,8 +1,8 @@
 package neusoft.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.neusoft.beans.User;
-import com.neusoft.service.UserService;
+import neusoft.beans.User;
+import neusoft.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

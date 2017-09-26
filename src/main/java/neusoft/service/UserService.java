@@ -1,6 +1,6 @@
 package neusoft.service;
 
-import com.neusoft.beans.User;
+import neusoft.beans.User;
 
 import java.util.List;
 

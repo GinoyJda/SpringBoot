@@ -1,5 +1,5 @@
 package neusoft.springboot;
-import com.neusoft.controller.TestController;
+import neusoft.controller.TestController;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +14,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.neusoft")
+@ComponentScan(basePackages = "neusoft")
 public class Application {
     //DataSource配置
     @Bean

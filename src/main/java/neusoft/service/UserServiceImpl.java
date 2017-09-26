@@ -1,7 +1,7 @@
 package neusoft.service;
 
-import com.neusoft.beans.User;
-import com.neusoft.dao.UserDao;
+import neusoft.beans.User;
+import neusoft.dao.UserDao;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

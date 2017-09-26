@@ -1,6 +1,6 @@
 package neusoft.dao;
 
-import com.neusoft.beans.User;
+import neusoft.beans.User;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.stereotype.Repository;
 
