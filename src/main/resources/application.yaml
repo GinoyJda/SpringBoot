@@ -1,6 +1,6 @@
 server:
   port: 8080
-  contextPath: /test
+  contextPath: /springboot
 spring:
   thymeleaf:
      cache: false
@@ -14,3 +14,12 @@ spring:
      username: root
      password: mysql
      driver-class-name: com.mysql.jdbc.Driver
+  redis:
+     hostName: 10.2.4.12
+     port: 6379
+     timeout: 60000
+     pool:
+       maxActive: 50
+       maxWait: -1
+       maxIdle: 5
+       minIdle: 0

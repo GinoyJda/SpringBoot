@@ -5,6 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+<a th:href="@{/testUser}">Thymeleaf</a>
+<a th:href="@{/redis}">Redis</a>
 <p th:text="'Hello, ' + ${name} + '!'" />
+<p th:text="'Redis, ' + ${redis} + '!'" />
 </body>
 </html>
