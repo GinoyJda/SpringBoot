@@ -2,13 +2,12 @@ package neusoft.controller;
 
 import com.alibaba.fastjson.JSON;
 import neusoft.beans.User;
+import neusoft.service.EsService;
 import neusoft.service.RedisService;
 import neusoft.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import javax.annotation.Resource;
 import java.util.List;
 
@@ -29,6 +28,9 @@ public class TestController {
     @Resource
     private RedisService redisService;
 
+    @Resource
+    private EsService esService;
+
     @RequestMapping("/index")
     public String greeting(Model model) {
         List<User> list = userService.getUser();
@@ -42,6 +44,14 @@ public class TestController {
     public String redis(Model model){
         redisService.set("redis-key","ginoy");
         model.addAttribute("redis",redisService.get("redis-key"));
+        return "index";
+    }
+
+    @RequestMapping("/es")
+    public String elastic(Model model){
+        String json = esService.queryInfoById("AV5V7U2SKBTIVYuVW0Zk");
+        System.out.println("elastic:"+json);
+        model.addAttribute("es",json);
         return "index";
     }
 }

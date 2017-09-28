@@ -1,5 +1,7 @@
 package neusoft.beans;
 
+import java.io.Serializable;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Administrator
@@ -7,7 +9,7 @@ package neusoft.beans;
  * Time: 下午1:35
  * To change this template use File | Settings | File Templates.
  */
-public class User {
+public class User implements Serializable {
     public String user;
     public String host;
 

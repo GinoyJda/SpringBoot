@@ -23,3 +23,7 @@ spring:
        maxWait: -1
        maxIdle: 5
        minIdle: 0
+  data:
+     elasticsearch:
+       cluster-name: SOC-15
+       cluster-nodes: 10.2.4.15:9300,10.2.4.42:9300,10.2.4.43:9300
