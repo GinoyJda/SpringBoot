@@ -8,4 +8,7 @@ package neusoft.test;
  * To change this template use File | Settings | File Templates.
  */
 public class D {
+    public static void main(String args[]){
+
+    }
 }
